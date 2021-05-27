@@ -11,38 +11,6 @@
             "sourceMaps": false,
             "runtimeExecutable": "/Users/srinivasaraoadapa/.nvm/versions/node/v10.17.0/bin/node",
             "program": "${workspaceFolder}/test.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Unit Tests",
-            "runtimeExecutable": "/Users/srinivasaraoadapa/.nvm/versions/node/v10.17.0/bin/node",
-            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-            "args": [
-                "-u",
-                "tdd",
-                "--timeout",
-                "999999",
-                "--colors",
-                "${workspaceFolder}/server/**/*.spec.js"
-            ],
-            "internalConsoleOptions": "openOnSessionStart"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Component Tests",
-            "runtimeExecutable": "/Users/srinivasaraoadapa/.nvm/versions/node/v10.17.0/bin/node",
-            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-            "args": [
-                "-u",
-                "tdd",
-                "--timeout",
-                "999999",
-                "--colors",
-                "${workspaceFolder}/tests/component/supertest/*.spec.js"
-            ],
-            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }
