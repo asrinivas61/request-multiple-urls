@@ -1,0 +1,7 @@
+{
+    "debug.node.autoAttach": "on",
+    "debug.extensionHost.useV3": true,
+    "debug.node.useV3": true,
+    "npm.enableRunFromFolder": true,
+    "npm.enableScriptExplorer": true
+}

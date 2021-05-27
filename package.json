@@ -1,0 +1,66 @@
+{
+  "name": "@srini/request-multiple-urls",
+  "version": "1.0.0",
+  "description": "A nodeJS module used to fetch an array of URLs which contain JSON data",
+  "main": "index.js",
+  "engines": {
+    "node": "10.17.0",
+    "npm": "6.11.3"
+  },
+  "dependencies": {
+    "abort-controller": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "babel-preset-es2017": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "semistandard": "^16.0.0"
+  },
+  "scripts": {
+    "pretest": "npm run format",
+    "test": "npm run test:coverage npm run test:unit",
+    "test:coverage": "nyc",
+    "format": "semistandard --env mocha --fix",
+    "test:unit": "mocha --require babel-core/register './tests/**/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asrinivas61/request-multiple-urls.git"
+  },
+  "keywords": [
+    "request",
+    "url",
+    "json",
+    "multiple",
+    "url",
+    "api"
+  ],
+  "nyc": {
+    "include": [
+      "lib/**/*.js"
+    ],
+    "exclude": [
+      "tests/**/*.spec.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "check-coverage": true,
+    "lines": 90,
+    "statements": 90,
+    "functions": 90,
+    "branches": 90
+  },
+  "author": "Srinivasa Rao A",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asrinivas61/request-multiple-urls/issues"
+  },
+  "homepage": "https://github.com/asrinivas61/request-multiple-urls#readme"
+}
