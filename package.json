@@ -1,5 +1,5 @@
 {
-  "name": "@srini/request-multiple-urls",
+  "name": "@srinivas61/request-multiple-urls",
   "version": "1.0.0",
   "description": "A nodeJS module used to fetch an array of URLs which contain JSON data",
   "main": "index.js",
