@@ -1,6 +1,6 @@
 {
   "name": "@srinivas61/request-multiple-urls",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A nodeJS module used to fetch an array of URLs which contain JSON data",
   "main": "index.js",
   "engines": {
