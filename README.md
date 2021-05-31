@@ -9,7 +9,7 @@ A nodeJS module used to fetch an array of URLs which contain JSON data and retur
 ## Installation steps
 Run the below command in the terminal in the project you want to use
 ```console
-npm install @srini/request-multiple-urls
+npm install @srinivas61/request-multiple-urls
 
 ```
 
@@ -23,7 +23,7 @@ npm test
 ## Example Usage
 
 ``` javascript
-const requestMultipleUrls = require('@srini/request-multiple-urls');
+const requestMultipleUrls = require('@srinivas61/request-multiple-urls');
 
 const urls = [
     'https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/ftse-fsi.json', 

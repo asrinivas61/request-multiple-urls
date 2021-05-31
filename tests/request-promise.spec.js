@@ -46,4 +46,12 @@ describe('lib/request-promise.js', () => {
       expect(error.message).to.equal('Input URL is not in expected standard URI format');
     }
   });
+
+  it('Should handle exceptions gracefully if the input URIs are empty', async () => {
+    try {
+      await Promise.all(requestPromise([]));
+    } catch (error) {
+      expect(error.message).to.equal('Input URLs array should not be empty');
+    }
+  });
 });
